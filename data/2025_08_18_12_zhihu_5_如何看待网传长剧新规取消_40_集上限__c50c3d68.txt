@@ -1,0 +1,12 @@
+{
+  "title": "如何看待网传长剧新规取消 40 集上限，改编翻拍不限日韩，古装剧播出数量放松？如属实将带来什么影响？",
+  "content": "",
+  "source": "zhihu",
+  "url": "https://www.zhihu.com/question/1939695502816928051",
+  "publish_time": "2025-08-18T12:00:42.720444",
+  "author": null,
+  "tags": "分类:zhihu",
+  "summary": null,
+  "published": false,
+  "rank": 5
+}

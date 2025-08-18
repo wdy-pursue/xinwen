@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻平台 - 智能资讯聚合</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/platform_cards.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PWA and Mobile optimization -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="新闻平台">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-newspaper"></i>
+                <span>新闻平台</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="/news" class="nav-link">
+                    <i class="fas fa-list"></i> 新闻列表
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主内容区域 -->
+    <main class="main">
+        <div class="container">
+            <!-- 页面标题 -->
+            <div class="page-header">
+                <h1><i class="fas fa-th-large"></i> 新闻平台概览</h1>
+                <p>各大平台热门新闻一览，点击查看详情</p>
+            </div>
+
+            <!-- 加载状态 -->
+            <div class="loading-container" id="loading">
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>正在加载平台数据...</p>
+                </div>
+            </div>
+
+            <!-- 平台卡片网格 -->
+            <div class="platforms-grid" id="platforms-grid">
+                <!-- 平台卡片将由JavaScript动态生成 -->
+            </div>
+        </div>
+    </main>
+
+    <!-- 新闻详情模态框 -->
+    <div id="news-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">新闻详情</h3>
+                <span class="close" id="modal-close">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- 新闻详情内容 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 新闻平台. 智能资讯聚合平台</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/platform_cards.js') }}"></script>
+</body>
+</html>

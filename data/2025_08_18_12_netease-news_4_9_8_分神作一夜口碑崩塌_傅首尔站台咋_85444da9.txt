@@ -1,0 +1,12 @@
+{
+  "title": "9.8 分神作一夜口碑崩塌！傅首尔站台咋就成票房 “毒药”？",
+  "content": "",
+  "source": "netease-news",
+  "url": "https://www.163.com/dy/article/K7885B6B0553TKF6.html",
+  "publish_time": "2025-08-18T12:00:42.721821",
+  "author": null,
+  "tags": "分类:netease-news",
+  "summary": null,
+  "published": false,
+  "rank": 4
+}

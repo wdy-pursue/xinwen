@@ -1,0 +1,12 @@
+{
+  "title": "都说中国木构建筑无法造出一个无柱的内部空间，那为什么不把传统古建里的藻井放大以达到穹顶的效果？",
+  "content": "",
+  "source": "zhihu",
+  "url": "https://www.zhihu.com/question/9643351487",
+  "publish_time": "2025-08-18T12:00:42.720441",
+  "author": null,
+  "tags": "分类:zhihu",
+  "summary": null,
+  "published": false,
+  "rank": 4
+}

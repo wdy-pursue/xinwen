@@ -1,0 +1,12 @@
+{
+  "title": "1分惜败！中国男篮负澳大利亚获亚洲杯亚军，创近十年最佳成绩",
+  "content": "",
+  "source": "qq-news",
+  "url": "https://new.qq.com/rain/a/20250818A00RHB00",
+  "publish_time": "2025-08-18T12:00:42.721802",
+  "author": null,
+  "tags": "分类:qq-news",
+  "summary": null,
+  "published": false,
+  "rank": 9
+}

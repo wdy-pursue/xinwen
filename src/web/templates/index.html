@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
+    <title>新闻热点 - 智能资讯聚合</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="{{ url_for('static', filename='css/style.css') }}" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PWA and Mobile optimization -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="新闻热点">
+    
+    <!-- Performance hints -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-newspaper"></i>
+                <span>新闻热点</span>
+            </div>
+            
+            <!-- 移动端汉堡菜单按钮 -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="菜单">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#" class="nav-link active" data-section="home" role="button" tabindex="0">
+                    <i class="fas fa-home"></i> 首页
+                </a>
+                <a href="#" class="nav-link" data-section="analytics" role="button" tabindex="0">
+                    <i class="fas fa-chart-bar"></i> 数据分析
+                </a>
+                <a href="#" class="nav-link" data-section="about" role="button" tabindex="0">
+                    <i class="fas fa-info-circle"></i> 关于
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- 厂商导航将由JavaScript根据设备类型动态创建 -->
+        
+        <!-- 主内容区域 -->
+        <div class="main-content">
+            <div class="container">
+                <!-- 首页内容 -->
+                <section id="home-section" class="content-section active">
+                <!-- 搜索和筛选 -->
+                <div class="search-container">
+                    <div class="search-grid">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="search-input" placeholder="搜索新闻标题或内容..." aria-label="搜索新闻"/>
+                        </div>
+                        <select id="source-filter" class="filter-select" aria-label="选择厂商">
+                            <option value="">全部厂商</option>
+                        </select>
+                        <button id="refresh-btn" class="btn-secondary" aria-label="刷新数据">
+                            <i class="fas fa-sync-alt"></i> 刷新
+                        </button>
+                    </div>
+                    
+                    <!-- 页面导航按钮 -->
+                    <div class="page-nav-buttons">
+                        <a href="/" class="btn-nav">
+                            <i class="fas fa-home"></i> 返回首页
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- 新闻列表 -->
+                <div class="news-section">
+                    <div class="section-header">
+                        <h2>最新资讯</h2>
+                        <span class="loading hidden" id="loading">
+                            <i class="fas fa-spinner fa-spin"></i> 加载中...
+                        </span>
+                    </div>
+                    <div class="news-list" id="news-list">
+                        <!-- 初始骨架屏加载效果 -->
+                        <div class="skeleton-news-item">
+                            <div class="skeleton skeleton-title"></div>
+                            <div class="skeleton skeleton-meta"></div>
+                            <div class="skeleton skeleton-content"></div>
+                            <div class="skeleton skeleton-content"></div>
+                            <div class="skeleton skeleton-content"></div>
+                            <div class="skeleton-tags">
+                                <div class="skeleton skeleton-tag"></div>
+                                <div class="skeleton skeleton-tag"></div>
+                                <div class="skeleton skeleton-tag"></div>
+                            </div>
+                        </div>
+                        <div class="skeleton-news-item">
+                            <div class="skeleton skeleton-title"></div>
+                            <div class="skeleton skeleton-meta"></div>
+                            <div class="skeleton skeleton-content"></div>
+                            <div class="skeleton skeleton-content"></div>
+                            <div class="skeleton skeleton-content"></div>
+                            <div class="skeleton-tags">
+                                <div class="skeleton skeleton-tag"></div>
+                                <div class="skeleton skeleton-tag"></div>
+                                <div class="skeleton skeleton-tag"></div>
+                            </div>
+                        </div>
+                        <div class="skeleton-news-item">
+                            <div class="skeleton skeleton-title"></div>
+                            <div class="skeleton skeleton-meta"></div>
+                            <div class="skeleton skeleton-content"></div>
+                            <div class="skeleton skeleton-content"></div>
+                            <div class="skeleton skeleton-content"></div>
+                            <div class="skeleton-tags">
+                                <div class="skeleton skeleton-tag"></div>
+                                <div class="skeleton skeleton-tag"></div>
+                                <div class="skeleton skeleton-tag"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 分页（暂时不使用） -->
+                    <div class="pagination" id="pagination"></div>
+                </div>
+            </section>
+
+            <!-- 数据分析页面 -->
+            <section id="analytics-section" class="content-section">
+                <div class="analytics-container">
+                    <div class="analytics-header">
+                        <h2><i class="fas fa-chart-line"></i> 热点舆情数据分析</h2>
+                        <p>基于当前新闻标题的智能分析，洞察热点趋势</p>
+                    </div>
+                    
+                    <!-- 统计卡片 -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" id="hot-keywords-stat">-</div>
+                                <div class="stat-label">热门关键词</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 图表区域 -->
+                    <div class="charts-grid">
+                        <!-- 词云图 -->
+                        <div class="chart-container full-width">
+                            <div class="chart-header">
+                                <h3><i class="fas fa-cloud"></i> 热词云图</h3>
+                                <p>基于新闻标题的关键词频率分析</p>
+                            </div>
+                            <div class="chart-content">
+                                <div id="wordcloud-chart" class="chart"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- 情感分析 -->
+                        <div class="chart-container full-width">
+                            <div class="chart-header">
+                                <h3><i class="fas fa-smile"></i> 情感倾向分析</h3>
+                                <p>基于标题关键词的情感倾向分析</p>
+                            </div>
+                            <div class="chart-content">
+                                <div id="sentiment-chart" class="chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 关于页面 -->
+            <section id="about-section" class="content-section">
+                <div class="about-content">
+                    <h2>关于新闻热点</h2>
+                    <p>新闻热点是一个智能资讯聚合平台，帮助您快速获取各大平台的热门新闻和资讯。</p>
+                    
+                    <h3>支持的平台</h3>
+                    <div class="platform-list">
+                        <div class="platform-item">
+                            <i class="fas fa-book"></i>
+                            <span>微信读书</span>
+                        </div>
+                        <div class="platform-item">
+                            <i class="fas fa-question-circle"></i>
+                            <span>知乎</span>
+                        </div>
+                        <div class="platform-item">
+                            <i class="fas fa-film"></i>
+                            <span>豆瓣</span>
+                        </div>
+                        <div class="platform-item">
+                            <i class="fas fa-heart"></i>
+                            <span>小红书</span>
+                        </div>
+                        <div class="platform-item">
+                            <i class="fas fa-fire"></i>
+                            <span>今日热榜</span>
+                        </div>
+                    </div>
+                    
+                    <h3>功能特色</h3>
+                    <ul>
+                        <li><i class="fas fa-search"></i> 智能搜索，快速定位感兴趣的内容</li>
+                        <li><i class="fas fa-filter"></i> 按平台筛选，精准获取目标资讯</li>
+                        <li><i class="fas fa-sort-numeric-down"></i> 排行榜展示，了解热门程度</li>
+                        <li><i class="fas fa-mobile-alt"></i> 响应式设计，移动端友好</li>
+                        <li><i class="fas fa-sync-alt"></i> 实时更新，保持信息新鲜度</li>
+                    </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- 模态框 -->
+    <div id="news-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">新闻详情</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- 新闻详情内容 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 新闻热点. 智能资讯聚合平台</p>
+        </div>
+    </footer>
+
+    <!-- 关键词相关新闻弹窗 -->
+    <div id="keyword-modal" class="modal">
+        <div class="modal-content keyword-modal-content">
+            <span class="close" id="keyword-modal-close">&times;</span>
+            <h2 id="keyword-modal-title">关键词相关新闻</h2>
+            <div id="keyword-modal-body">
+                <div class="keyword-news-loading">
+                    <i class="fas fa-spinner fa-spin"></i> 加载中...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Safari兼容性Polyfills - 必须在其他脚本之前加载 -->
+    <script src="{{ url_for('static', filename='js/polyfills.js') }}?v={{ current_timestamp or '1.0' }}"></script>
+    
+    <!-- 图表库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.1.0/dist/echarts-wordcloud.min.js"></script>
+    
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/mobile-optimizations.js') }}?v={{ current_timestamp or '1.0' }}"></script>
+    <script src="{{ url_for('static', filename='js/news_manager.js') }}?v={{ current_timestamp or '1.0' }}"></script>
+    <script src="{{ url_for('static', filename='js/analytics.js') }}?v={{ current_timestamp or '1.0' }}"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "title": "红尘男女：深夜情感故事集",
+  "content": "",
+  "source": "weread",
+  "url": "https://weread.qq.com/web/bookDetail/a01323c0813aba38eg0189c1",
+  "publish_time": "2025-08-18T12:00:42.721657",
+  "author": null,
+  "tags": "分类:weread",
+  "summary": null,
+  "published": false,
+  "rank": 7
+}

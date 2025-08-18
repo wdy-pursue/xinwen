@@ -1,0 +1,12 @@
+{
+  "title": "boss直聘崩了",
+  "content": "",
+  "source": "weibo",
+  "url": "https://s.weibo.com/weibo?q=%23boss%E7%9B%B4%E8%81%98%E5%B4%A9%E4%BA%86&t=31&band_rank=1&Refer=top",
+  "publish_time": "2025-08-18T12:00:42.720378",
+  "author": null,
+  "tags": "分类:weibo",
+  "summary": null,
+  "published": false,
+  "rank": 8
+}

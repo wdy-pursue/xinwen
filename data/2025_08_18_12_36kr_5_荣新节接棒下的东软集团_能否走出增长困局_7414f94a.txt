@@ -1,0 +1,12 @@
+{
+  "title": "荣新节接棒下的东软集团，能否走出增长困局？",
+  "content": "",
+  "source": "36kr",
+  "url": "https://www.36kr.com/p/3424007121852801",
+  "publish_time": "2025-08-18T12:00:42.721613",
+  "author": null,
+  "tags": "分类:36kr",
+  "summary": null,
+  "published": false,
+  "rank": 5
+}

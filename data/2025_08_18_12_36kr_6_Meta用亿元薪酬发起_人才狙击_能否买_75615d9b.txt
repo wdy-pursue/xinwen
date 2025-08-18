@@ -1,0 +1,12 @@
+{
+  "title": "Meta用亿元薪酬发起「人才狙击」能否买来一个AI未来？",
+  "content": "",
+  "source": "36kr",
+  "url": "https://www.36kr.com/p/3425586536192129",
+  "publish_time": "2025-08-18T12:00:42.721616",
+  "author": null,
+  "tags": "分类:36kr",
+  "summary": null,
+  "published": false,
+  "rank": 6
+}

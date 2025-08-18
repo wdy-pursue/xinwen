@@ -1,0 +1,12 @@
+{
+  "title": "上月小米空调线上销量首度超越格力排行全国第二：卢伟冰回应“将持续努力”、王化感叹“新时代来了”",
+  "content": "",
+  "source": "ithome",
+  "url": "https://www.ithome.com/0/875/867.htm",
+  "publish_time": "2025-08-18T12:00:42.721917",
+  "author": null,
+  "tags": "分类:ithome",
+  "summary": null,
+  "published": false,
+  "rank": 2
+}

@@ -1,0 +1,12 @@
+{
+  "title": "吉利全新一代博越上市：标配Flyme Auto座舱，限时售价7.89万起",
+  "content": "",
+  "source": "smzdm",
+  "url": "https://post.smzdm.com/p/agom3gz3/",
+  "publish_time": "2025-08-18T12:00:42.722154",
+  "author": null,
+  "tags": "分类:smzdm",
+  "summary": null,
+  "published": false,
+  "rank": 8
+}

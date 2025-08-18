@@ -1,0 +1,12 @@
+{
+  "title": "男子自愿放弃继承亡父房产，法院判决：无效！",
+  "content": "",
+  "source": "qq-news",
+  "url": "https://new.qq.com/rain/a/20250818A01UCT00",
+  "publish_time": "2025-08-18T12:00:42.721805",
+  "author": null,
+  "tags": "分类:qq-news",
+  "summary": null,
+  "published": false,
+  "rank": 10
+}

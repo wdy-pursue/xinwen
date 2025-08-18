@@ -1,0 +1,12 @@
+{
+  "title": "女子踹男友下河致死,仅判5年半",
+  "content": "",
+  "source": "tieba",
+  "url": "https://tieba.baidu.com/hottopic/browse/hottopic?topic_id=28344317&amp;topic_name=%E5%A5%B3%E5%AD%90%E8%B8%B9%E7%94%B7%E5%8F%8B%E4%B8%8B%E6%B2%B3%E8%87%B4%E6%AD%BB%2C%E4%BB%85%E5%88%A45%E5%B9%B4%E5%8D%8A",
+  "publish_time": "2025-08-18T12:00:42.721752",
+  "author": null,
+  "tags": "分类:tieba",
+  "summary": null,
+  "published": false,
+  "rank": 3
+}

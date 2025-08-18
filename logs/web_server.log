@@ -1,0 +1,90 @@
+🌐 启动新闻可视化Web服务器...
+📍 项目根目录: /opt/gzh
+🚀 在端口 8080 启动服务器...
+📱 本地访问: http://localhost:8080
+📱 远程访问: http://你的服务器IP:8080
+💡 通过nginx代理可访问80端口
+⏹️  按 Ctrl+C 停止服务器
+
+ * Serving Flask app 'src.web.app'
+ * Debug mode: off
+2025-08-18 14:03:22,650 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.2.24.12:8080
+2025-08-18 14:03:22,650 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-18 14:03:24,811 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:03:24] "GET /?ide_webview_request_time=1755497005240 HTTP/1.1" 200 -
+2025-08-18 14:03:25,080 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:03:25] "[36mGET /static/css/platform_cards.css HTTP/1.1[0m" 304 -
+2025-08-18 14:03:25,345 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:03:25] "[36mGET /static/js/platform_cards.js HTTP/1.1[0m" 304 -
+2025-08-18 14:03:25,426 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:03:25,430 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:03:25] "GET /api/news?per_page=1000 HTTP/1.1" 200 -
+2025-08-18 14:03:26,166 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:03:26] "[33mGET /@vite/client HTTP/1.1[0m" 404 -
+2025-08-18 14:03:40,726 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:03:40] "GET /?ide_webview_request_time=1755497015622 HTTP/1.1" 200 -
+2025-08-18 14:03:42,581 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:03:42] "[36mGET /static/css/platform_cards.css HTTP/1.1[0m" 304 -
+2025-08-18 14:03:48,547 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:03:48] "[36mGET /static/js/platform_cards.js HTTP/1.1[0m" 304 -
+2025-08-18 14:03:53,186 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:03:53] "[33mGET /@vite/client HTTP/1.1[0m" 404 -
+2025-08-18 14:03:53,208 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:03:53,212 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:03:53] "GET /api/news?per_page=1000 HTTP/1.1" 200 -
+2025-08-18 14:04:22,362 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:04:22,365 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:04:22] "GET /api/news?per_page=5 HTTP/1.1" 200 -
+2025-08-18 14:04:30,340 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:04:30] "GET /news HTTP/1.1" 200 -
+2025-08-18 14:04:38,410 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:04:38] "GET /static/js/polyfills.js?v=1.0 HTTP/1.1" 200 -
+2025-08-18 14:04:38,414 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:04:38] "[36mGET /static/js/mobile-optimizations.js?v=1.0 HTTP/1.1[0m" 304 -
+2025-08-18 14:04:38,422 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:04:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-18 14:04:38,425 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:04:38] "[36mGET /static/js/analytics.js?v=1.0 HTTP/1.1[0m" 304 -
+2025-08-18 14:04:38,426 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:04:38] "GET /static/js/news_manager.js?v=1.0 HTTP/1.1" 200 -
+2025-08-18 14:04:40,659 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:04:40,664 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:04:40] "GET /api/news?per_page=1000 HTTP/1.1" 200 -
+2025-08-18 14:04:46,657 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:04:46] "[33mGET /@vite/client HTTP/1.1[0m" 404 -
+2025-08-18 14:05:32,346 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:05:32] "GET / HTTP/1.0" 200 -
+2025-08-18 14:05:32,501 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:05:32,506 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:05:32] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:06:08,805 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:06:08] "GET /news HTTP/1.0" 200 -
+2025-08-18 14:06:50,091 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:06:50] "GET / HTTP/1.0" 200 -
+2025-08-18 14:06:51,844 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:06:51,847 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:06:51] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:07:15,747 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:07:15] "GET /news?source=小红书 HTTP/1.0" 200 -
+2025-08-18 14:07:17,885 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:07:17,889 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:07:17] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:08:13,963 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:13] "GET / HTTP/1.0" 200 -
+2025-08-18 14:08:14,034 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:14] "GET / HTTP/1.0" 200 -
+2025-08-18 14:08:14,157 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:08:14,162 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:14] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:08:15,393 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:15] "GET /news HTTP/1.0" 200 -
+2025-08-18 14:08:25,064 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:25] "GET / HTTP/1.0" 200 -
+2025-08-18 14:08:25,188 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:08:25,192 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:25] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:08:26,958 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:26] "GET /news?source=小红书 HTTP/1.0" 200 -
+2025-08-18 14:08:27,128 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:08:27,131 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:27] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:08:30,743 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:08:30,746 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:30] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:08:30,753 - src.api.controllers.analytics_controller - INFO - 找到 200 个文章文件
+2025-08-18 14:08:30,759 - src.api.controllers.analytics_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:08:30,759 - src.api.controllers.analytics_controller - INFO - 开始从 200 篇文章中提取关键词
+2025-08-18 14:08:30,772 - src.api.controllers.analytics_controller - INFO - 生成了 150 个候选关键词
+2025-08-18 14:08:30,795 - src.api.controllers.analytics_controller - INFO - 提取完成，找到 150 个关键词，返回前 50 个
+2025-08-18 14:08:30,796 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:30] "GET /api/analytics/keywords?limit=50 HTTP/1.0" 200 -
+2025-08-18 14:08:42,788 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:42] "GET / HTTP/1.0" 200 -
+2025-08-18 14:08:42,858 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:08:42,861 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:42] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:08:45,508 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:08:45] "GET /news?source=小红书 HTTP/1.0" 200 -
+2025-08-18 14:09:37,933 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:09:37] "GET / HTTP/1.0" 200 -
+2025-08-18 14:09:37,963 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:09:37] "GET / HTTP/1.0" 200 -
+2025-08-18 14:09:38,513 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:09:38,517 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:09:38] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:09:45,738 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:09:45] "GET /news?source=小红书 HTTP/1.0" 200 -
+2025-08-18 14:09:45,894 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:09:45,898 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:09:45] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:10:05,828 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:10:05] "GET /news?source=小红书 HTTP/1.0" 200 -
+2025-08-18 14:10:12,669 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:10:12] "GET /news HTTP/1.0" 200 -
+2025-08-18 14:10:13,491 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:10:13,503 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:10:13] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:10:22,064 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:10:22] "GET / HTTP/1.0" 200 -
+2025-08-18 14:10:22,164 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:10:22,167 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:10:22] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:10:23,279 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:10:23,282 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:10:23] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:10:25,098 - src.api.controllers.news_controller - INFO - 成功加载 200 篇文章
+2025-08-18 14:10:25,102 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:10:25] "GET /api/news?per_page=1000 HTTP/1.0" 200 -
+2025-08-18 14:15:10,593 - werkzeug - INFO - 127.0.0.1 - - [18/Aug/2025 14:15:10] "GET /news?source=小红书 HTTP/1.0" 200 -

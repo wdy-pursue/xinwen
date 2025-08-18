@@ -1,0 +1,12 @@
+{
+  "title": "50亿建赛道！599元爽玩仰望U9，比亚迪意在弱化技术宅标签",
+  "content": "",
+  "source": "36kr",
+  "url": "https://www.36kr.com/p/3424110513625225",
+  "publish_time": "2025-08-18T12:00:42.721603",
+  "author": null,
+  "tags": "分类:36kr",
+  "summary": null,
+  "published": false,
+  "rank": 2
+}

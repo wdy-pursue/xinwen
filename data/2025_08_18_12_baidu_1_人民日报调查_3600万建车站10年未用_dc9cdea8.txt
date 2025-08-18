@@ -1,0 +1,12 @@
+{
+  "title": "人民日报调查：3600万建车站10年未用",
+  "content": "",
+  "source": "baidu",
+  "url": "https://www.baidu.com/s?wd=%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%E8%B0%83%E6%9F%A5%EF%BC%9A3600%E4%B8%87%E5%BB%BA%E8%BD%A6%E7%AB%9910%E5%B9%B4%E6%9C%AA%E7%94%A8",
+  "publish_time": "2025-08-18T12:00:42.720303",
+  "author": null,
+  "tags": "分类:baidu",
+  "summary": null,
+  "published": false,
+  "rank": 1
+}

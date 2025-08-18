@@ -1,0 +1,12 @@
+{
+  "title": "高温+暴雨双预警",
+  "content": "",
+  "source": "baidu",
+  "url": "https://www.baidu.com/s?wd=%E9%AB%98%E6%B8%A9%2B%E6%9A%B4%E9%9B%A8%E5%8F%8C%E9%A2%84%E8%AD%A6",
+  "publish_time": "2025-08-18T12:00:42.720326",
+  "author": null,
+  "tags": "分类:baidu",
+  "summary": null,
+  "published": false,
+  "rank": 3
+}

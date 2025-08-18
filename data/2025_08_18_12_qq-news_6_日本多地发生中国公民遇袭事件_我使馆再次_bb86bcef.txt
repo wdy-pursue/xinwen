@@ -1,0 +1,12 @@
+{
+  "title": "日本多地发生中国公民遇袭事件，我使馆再次提醒赴日游客注意安全",
+  "content": "",
+  "source": "qq-news",
+  "url": "https://new.qq.com/rain/a/20250818A0238000",
+  "publish_time": "2025-08-18T12:00:42.721793",
+  "author": null,
+  "tags": "分类:qq-news",
+  "summary": null,
+  "published": false,
+  "rank": 6
+}

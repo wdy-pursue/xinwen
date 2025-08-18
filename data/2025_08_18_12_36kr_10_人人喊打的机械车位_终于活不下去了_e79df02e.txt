@@ -1,0 +1,12 @@
+{
+  "title": "人人喊打的机械车位，终于活不下去了",
+  "content": "",
+  "source": "36kr",
+  "url": "https://www.36kr.com/p/3427538068426375",
+  "publish_time": "2025-08-18T12:00:42.721629",
+  "author": null,
+  "tags": "分类:36kr",
+  "summary": null,
+  "published": false,
+  "rank": 10
+}

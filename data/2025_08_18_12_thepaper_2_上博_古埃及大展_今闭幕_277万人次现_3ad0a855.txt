@@ -1,0 +1,12 @@
+{
+  "title": "上博“古埃及大展”今闭幕：277万人次现象级大展的背后",
+  "content": "",
+  "source": "thepaper",
+  "url": "https://www.thepaper.cn/newsDetail_forward_31417148",
+  "publish_time": "2025-08-18T12:00:42.721852",
+  "author": null,
+  "tags": "分类:thepaper",
+  "summary": null,
+  "published": false,
+  "rank": 2
+}

@@ -1,0 +1,12 @@
+{
+  "title": "投降是对的,明末销量暴涨",
+  "content": "",
+  "source": "tieba",
+  "url": "https://tieba.baidu.com/hottopic/browse/hottopic?topic_id=28344310&amp;topic_name=%E6%8A%95%E9%99%8D%E6%98%AF%E5%AF%B9%E7%9A%84%2C%E6%98%8E%E6%9C%AB%E9%94%80%E9%87%8F%E6%9A%B4%E6%B6%A8",
+  "publish_time": "2025-08-18T12:00:42.721755",
+  "author": null,
+  "tags": "分类:tieba",
+  "summary": null,
+  "published": false,
+  "rank": 4
+}

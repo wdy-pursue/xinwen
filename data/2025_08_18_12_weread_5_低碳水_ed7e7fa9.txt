@@ -1,0 +1,12 @@
+{
+  "title": "低碳水",
+  "content": "",
+  "source": "weread",
+  "url": "https://weread.qq.com/web/bookDetail/16e32c50813aba461g018746",
+  "publish_time": "2025-08-18T12:00:42.721650",
+  "author": null,
+  "tags": "分类:weread",
+  "summary": null,
+  "published": false,
+  "rank": 5
+}

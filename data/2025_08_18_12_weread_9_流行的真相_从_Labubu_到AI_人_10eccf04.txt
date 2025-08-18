@@ -1,0 +1,12 @@
+{
+  "title": "流行的真相：从 Labubu 到AI，人类为什么上瘾？（轻访谈）",
+  "content": "",
+  "source": "weread",
+  "url": "https://weread.qq.com/web/bookDetail/01d32920813aba39eg0160d0",
+  "publish_time": "2025-08-18T12:00:42.721663",
+  "author": null,
+  "tags": "分类:weread",
+  "summary": null,
+  "published": false,
+  "rank": 9
+}

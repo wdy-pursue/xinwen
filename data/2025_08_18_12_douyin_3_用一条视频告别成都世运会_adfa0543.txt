@@ -1,0 +1,12 @@
+{
+  "title": "用一条视频告别成都世运会",
+  "content": "",
+  "source": "douyin",
+  "url": "https://www.douyin.com/hot/2207006",
+  "publish_time": "2025-08-18T12:00:42.721454",
+  "author": null,
+  "tags": "分类:douyin",
+  "summary": null,
+  "published": false,
+  "rank": 3
+}
