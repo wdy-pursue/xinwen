@@ -1,0 +1,12 @@
+{
+  "title": "广东廉江一家3人遭邻居杀害，被告人一审被判死刑",
+  "content": "",
+  "source": "thepaper",
+  "url": "https://www.thepaper.cn/newsDetail_forward_31421692",
+  "publish_time": "2025-08-19T12:00:43.637280",
+  "author": null,
+  "tags": "分类:thepaper",
+  "summary": null,
+  "published": false,
+  "rank": 7
+}

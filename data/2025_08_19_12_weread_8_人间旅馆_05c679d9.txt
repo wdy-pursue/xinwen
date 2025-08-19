@@ -1,0 +1,12 @@
+{
+  "title": "人间旅馆",
+  "content": "",
+  "source": "weread",
+  "url": "https://weread.qq.com/web/bookDetail/f9b322c0813aba1deg0130cf",
+  "publish_time": "2025-08-19T12:00:43.637039",
+  "author": null,
+  "tags": "分类:weread",
+  "summary": null,
+  "published": false,
+  "rank": 8
+}

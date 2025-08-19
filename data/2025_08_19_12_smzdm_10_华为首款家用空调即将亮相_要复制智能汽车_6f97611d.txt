@@ -1,0 +1,12 @@
+{
+  "title": "华为首款家用空调即将亮相！要复制智能汽车模式？",
+  "content": "",
+  "source": "smzdm",
+  "url": "https://post.smzdm.com/p/a65mk9gz/",
+  "publish_time": "2025-08-19T12:00:43.637408",
+  "author": null,
+  "tags": "分类:smzdm",
+  "summary": null,
+  "published": false,
+  "rank": 10
+}

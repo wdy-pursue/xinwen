@@ -1,0 +1,12 @@
+{
+  "title": "Hinton预言成真，AI接管美国一半白领，牛津哈佛扎堆转行做技工",
+  "content": "",
+  "source": "36kr",
+  "url": "https://www.36kr.com/p/3428275699977608",
+  "publish_time": "2025-08-19T12:00:43.636983",
+  "author": null,
+  "tags": "分类:36kr",
+  "summary": null,
+  "published": false,
+  "rank": 1
+}

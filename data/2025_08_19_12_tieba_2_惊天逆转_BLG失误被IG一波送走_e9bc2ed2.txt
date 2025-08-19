@@ -1,0 +1,12 @@
+{
+  "title": "惊天逆转,BLG失误被IG一波送走",
+  "content": "",
+  "source": "tieba",
+  "url": "https://tieba.baidu.com/hottopic/browse/hottopic?topic_id=28344349&amp;topic_name=%E6%83%8A%E5%A4%A9%E9%80%86%E8%BD%AC%2CBLG%E5%A4%B1%E8%AF%AF%E8%A2%ABIG%E4%B8%80%E6%B3%A2%E9%80%81%E8%B5%B0",
+  "publish_time": "2025-08-19T12:00:43.637116",
+  "author": null,
+  "tags": "分类:tieba",
+  "summary": null,
+  "published": false,
+  "rank": 2
+}

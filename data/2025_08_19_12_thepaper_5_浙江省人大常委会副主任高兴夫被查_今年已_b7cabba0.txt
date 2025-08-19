@@ -1,0 +1,12 @@
+{
+  "title": "浙江省人大常委会副主任高兴夫被查，今年已有38名中管干部落马",
+  "content": "",
+  "source": "thepaper",
+  "url": "https://www.thepaper.cn/newsDetail_forward_31422691",
+  "publish_time": "2025-08-19T12:00:43.637275",
+  "author": null,
+  "tags": "分类:thepaper",
+  "summary": null,
+  "published": false,
+  "rank": 5
+}

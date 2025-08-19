@@ -1,0 +1,12 @@
+{
+  "title": "显化",
+  "content": "",
+  "source": "weread",
+  "url": "https://weread.qq.com/web/bookDetail/1d932210813aba461g015994",
+  "publish_time": "2025-08-19T12:00:43.637019",
+  "author": null,
+  "tags": "分类:weread",
+  "summary": null,
+  "published": false,
+  "rank": 1
+}

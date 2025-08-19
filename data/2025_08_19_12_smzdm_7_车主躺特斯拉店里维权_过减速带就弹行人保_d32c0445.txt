@@ -1,0 +1,12 @@
+{
+  "title": "车主躺特斯拉店里维权：过减速带就弹行人保护，已修4次仍未解决",
+  "content": "",
+  "source": "smzdm",
+  "url": "https://post.smzdm.com/p/apw8emdw/",
+  "publish_time": "2025-08-19T12:00:43.637401",
+  "author": null,
+  "tags": "分类:smzdm",
+  "summary": null,
+  "published": false,
+  "rank": 7
+}

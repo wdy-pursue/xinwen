@@ -1,0 +1,12 @@
+{
+  "title": "我在100天内自学英文翻转人生",
+  "content": "",
+  "source": "weread",
+  "url": "https://weread.qq.com/web/bookDetail/c4132f0071ed8d4cc418130",
+  "publish_time": "2025-08-19T12:00:43.637033",
+  "author": null,
+  "tags": "分类:weread",
+  "summary": null,
+  "published": false,
+  "rank": 6
+}

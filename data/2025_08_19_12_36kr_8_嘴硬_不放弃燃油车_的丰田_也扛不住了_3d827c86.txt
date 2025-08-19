@@ -1,0 +1,12 @@
+{
+  "title": "嘴硬“不放弃燃油车”的丰田，也扛不住了",
+  "content": "",
+  "source": "36kr",
+  "url": "https://www.36kr.com/p/3427988803587458",
+  "publish_time": "2025-08-19T12:00:43.637004",
+  "author": null,
+  "tags": "分类:36kr",
+  "summary": null,
+  "published": false,
+  "rank": 8
+}

@@ -1,0 +1,12 @@
+{
+  "title": "这小夜灯过于抽象了",
+  "content": "",
+  "source": "douyin",
+  "url": "https://www.douyin.com/hot/2207043",
+  "publish_time": "2025-08-19T12:00:43.636874",
+  "author": null,
+  "tags": "分类:douyin",
+  "summary": null,
+  "published": false,
+  "rank": 5
+}

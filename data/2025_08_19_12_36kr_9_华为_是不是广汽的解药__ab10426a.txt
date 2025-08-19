@@ -1,0 +1,12 @@
+{
+  "title": "华为，是不是广汽的解药？",
+  "content": "",
+  "source": "36kr",
+  "url": "https://www.36kr.com/p/3428187867500162",
+  "publish_time": "2025-08-19T12:00:43.637007",
+  "author": null,
+  "tags": "分类:36kr",
+  "summary": null,
+  "published": false,
+  "rank": 9
+}

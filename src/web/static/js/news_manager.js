@@ -296,9 +296,9 @@ class NewsManager {
         
         let groupedHTML = '';
         
-        // 🔧 关键修复：直接按当前分组的文章数量排序，与侧边栏保持一致  
+        // 🔧 关键修复：按平台优先级排序，与平台卡片保持一致  
         const sortedVendors = Object.keys(groupedNews).sort((a, b) => {
-            return groupedNews[b].length - groupedNews[a].length; // 倒序：文章多的在前
+            return this.getVendorPriority(a, b);
         });
         
         for (const vendor of sortedVendors) {
@@ -373,6 +373,79 @@ class NewsManager {
             'zhihu': '知乎'
         };
         return nameMap[platformName] || platformName;
+    }
+
+    /**
+     * 获取厂商优先级排序（与平台卡片保持一致）
+     * @param {string} vendorA - 厂商A
+     * @param {string} vendorB - 厂商B
+     * @returns {number} 排序值
+     */
+    getVendorPriority(vendorA, vendorB) {
+        // 将显示名称转换为原始平台名称
+        const reverseNameMap = {
+            '36氪': '36kr',
+            '百度': 'baidu',
+            'B站': 'bilibili',
+            '豆瓣小组': 'douban-group',
+            '抖音': 'douyin',
+            '极客公园': 'geekpark',
+            '虎扑': 'hupu',
+            'IT之家': 'ithome',
+            '快手': 'kuaishou',
+            '网易新闻': 'netease-news',
+            '腾讯新闻': 'qq-news',
+            '什么值得买': 'smzdm',
+            '少数派': 'sspai',
+            '澎湃新闻': 'thepaper',
+            '百度贴吧': 'tieba',
+            '今日头条': 'toutiao',
+            '微博': 'weibo',
+            '微信读书': 'weread',
+            '小红书': 'xiaohongshu',
+            '知乎': 'zhihu'
+        };
+        
+        const platformA = reverseNameMap[vendorA] || vendorA.toLowerCase();
+        const platformB = reverseNameMap[vendorB] || vendorB.toLowerCase();
+        
+        // 定义平台优先级（数字越小优先级越高）
+        const priorityMap = {
+            // 百度优先级最高
+            'baidu': 1,
+            
+            // 国家政策类平台（优先级较高）
+            'qq-news': 10,
+            'toutiao': 11,
+            'thepaper': 12,
+            'netease-news': 13,
+            
+            // 科技资讯类
+            '36kr': 20,
+            'ithome': 21,
+            'geekpark': 22,
+            'sspai': 23,
+            
+            // 综合资讯类
+            'weibo': 30,
+            'zhihu': 31,
+            'tieba': 32,
+            'smzdm': 33,
+            'weread': 34,
+            'hupu': 35,
+            'douban-group': 36,
+            
+            // 娱乐类平台（优先级较低）
+            'xiaohongshu': 90,
+            'kuaishou': 91,
+            'douyin': 92,
+            'bilibili': 93
+        };
+        
+        const priorityA = priorityMap[platformA] || 50; // 默认优先级
+        const priorityB = priorityMap[platformB] || 50;
+        
+        return priorityA - priorityB;
     }
 
     /**
@@ -544,7 +617,7 @@ class NewsManager {
         // 🔧 关键修复：使用当前页面文章分组，确保与右侧内容完全一致
         const groupedNews = this.groupNewsByVendor(this.state.articles);
         const vendors = Object.keys(groupedNews).sort((a, b) => {
-            return groupedNews[b].length - groupedNews[a].length; // 按文章数量倒序
+            return this.getVendorPriority(a, b); // 按优先级排序，与新闻列表保持一致
         });
         
         console.log('📊 侧边栏厂商排序:', vendors.map(v => `${v}(${groupedNews[v].length})`));

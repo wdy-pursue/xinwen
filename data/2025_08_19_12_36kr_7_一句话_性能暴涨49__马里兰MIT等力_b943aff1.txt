@@ -1,0 +1,12 @@
+{
+  "title": "一句话，性能暴涨49%，马里兰MIT等力作：Prompt才是大模型终极武器",
+  "content": "",
+  "source": "36kr",
+  "url": "https://www.36kr.com/p/3428131017330310",
+  "publish_time": "2025-08-19T12:00:43.637000",
+  "author": null,
+  "tags": "分类:36kr",
+  "summary": null,
+  "published": false,
+  "rank": 7
+}

@@ -1,0 +1,12 @@
+{
+  "title": "玻璃炸了",
+  "content": "",
+  "source": "douban-group",
+  "url": "https://www.douban.com/group/topic/333784208/?_spm_id=Mjk4Mzk2NDM",
+  "publish_time": "2025-08-19T12:00:43.637313",
+  "author": null,
+  "tags": "分类:douban-group",
+  "summary": null,
+  "published": false,
+  "rank": 8
+}

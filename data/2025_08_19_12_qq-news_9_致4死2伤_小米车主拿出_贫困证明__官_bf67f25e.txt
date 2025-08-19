@@ -1,0 +1,12 @@
+{
+  "title": "致4死2伤，小米车主拿出“贫困证明”？官方：并非“贫困户”证明，村支书停职处理",
+  "content": "",
+  "source": "qq-news",
+  "url": "https://new.qq.com/rain/a/20250819A01FMD00",
+  "publish_time": "2025-08-19T12:00:43.637205",
+  "author": null,
+  "tags": "分类:qq-news",
+  "summary": null,
+  "published": false,
+  "rank": 9
+}

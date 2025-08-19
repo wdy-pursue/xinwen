@@ -1,0 +1,12 @@
+{
+  "title": "辛巴自创品牌卫生巾被曝光添加硫脲，有致癌风险，受害者维权遇举证难，硫脲是什么？此案维权有哪些突破点？",
+  "content": "",
+  "source": "zhihu",
+  "url": "https://www.zhihu.com/question/1940731526703708003",
+  "publish_time": "2025-08-19T12:00:43.636835",
+  "author": null,
+  "tags": "分类:zhihu",
+  "summary": null,
+  "published": false,
+  "rank": 3
+}

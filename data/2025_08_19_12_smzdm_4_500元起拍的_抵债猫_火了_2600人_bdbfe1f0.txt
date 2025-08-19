@@ -1,0 +1,12 @@
+{
+  "title": "500元起拍的“抵债猫”火了：2600人竞拍 25万人围观",
+  "content": "",
+  "source": "smzdm",
+  "url": "https://post.smzdm.com/p/arl970q7/",
+  "publish_time": "2025-08-19T12:00:43.637393",
+  "author": null,
+  "tags": "分类:smzdm",
+  "summary": null,
+  "published": false,
+  "rank": 4
+}

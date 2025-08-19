@@ -1,0 +1,12 @@
+{
+  "title": "鄂尔多斯暴雨致3死3失联",
+  "content": "",
+  "source": "douyin",
+  "url": "https://www.douyin.com/hot/2208126",
+  "publish_time": "2025-08-19T12:00:43.636884",
+  "author": null,
+  "tags": "分类:douyin",
+  "summary": null,
+  "published": false,
+  "rank": 8
+}

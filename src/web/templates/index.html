@@ -24,7 +24,12 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 </head>
-<body>
+<body class="theme-auto">
+    <a href="#main-content" class="skip-link">跳转到主要内容</a>
+    <div class="global-loader" id="globalLoader">
+        <div class="loader-spinner"></div>
+    </div>
+    <div aria-live="polite" aria-atomic="true" class="sr-only" id="announcements"></div>
     <!-- 顶部导航 -->
     <header class="header" id="header">
         <div class="container">
@@ -54,14 +59,14 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="main-content">
         <!-- 厂商导航将由JavaScript根据设备类型动态创建 -->
         
         <!-- 主内容区域 -->
         <div class="main-content">
             <div class="container">
                 <!-- 首页内容 -->
-                <section id="home-section" class="content-section active">
+                <section id="home-section" class="content-section active animate-on-scroll">
                 <!-- 搜索和筛选 -->
                 <div class="search-container">
                     <div class="search-grid">
@@ -95,7 +100,7 @@
                             <i class="fas fa-spinner fa-spin"></i> 加载中...
                         </span>
                     </div>
-                    <div class="news-list" id="news-list">
+                    <div class="news-list animate-on-scroll" id="news-list">
                         <!-- 初始骨架屏加载效果 -->
                         <div class="skeleton-news-item">
                             <div class="skeleton skeleton-title"></div>
@@ -273,8 +278,11 @@
     <script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.1.0/dist/echarts-wordcloud.min.js"></script>
     
     <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/theme-manager.js') }}?v={{ current_timestamp or '1.0' }}"></script>
     <script src="{{ url_for('static', filename='js/mobile-optimizations.js') }}?v={{ current_timestamp or '1.0' }}"></script>
-    <script src="{{ url_for('static', filename='js/news_manager.js') }}?v={{ current_timestamp or '1.0' }}"></script>
+    <script src="{{ url_for('static', filename='js/animation-manager.js') }}?v={{ current_timestamp or '1.0' }}"></script>
+     <script src="{{ url_for('static', filename='js/accessibility-manager.js') }}?v={{ current_timestamp or '1.0' }}"></script>
+     <script src="{{ url_for('static', filename='js/news_manager.js') }}?v={{ current_timestamp or '1.0' }}"></script>
     <script src="{{ url_for('static', filename='js/analytics.js') }}?v={{ current_timestamp or '1.0' }}"></script>
 </body>
 </html>

@@ -1,0 +1,12 @@
+{
+  "title": "徕芬 CEO 叶洪新怼前员工潘坚“收钱办事没良心”，后者回应“有人用部分事实带节奏”",
+  "content": "",
+  "source": "ithome",
+  "url": "https://www.ithome.com/0/875/996.htm",
+  "publish_time": "2025-08-19T12:00:43.637341",
+  "author": null,
+  "tags": "分类:ithome",
+  "summary": null,
+  "published": false,
+  "rank": 8
+}

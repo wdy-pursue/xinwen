@@ -1,0 +1,12 @@
+{
+  "title": "什么叫选秀大年！前八顺位6人年薪超3000万，另外2人在商讨大合同",
+  "content": "",
+  "source": "netease-news",
+  "url": "https://www.163.com/dy/article/K7AOK9E105490C9N.html",
+  "publish_time": "2025-08-19T12:00:43.637250",
+  "author": null,
+  "tags": "分类:netease-news",
+  "summary": null,
+  "published": false,
+  "rank": 10
+}

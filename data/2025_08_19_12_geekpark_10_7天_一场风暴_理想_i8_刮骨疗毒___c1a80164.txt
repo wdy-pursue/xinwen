@@ -1,0 +1,12 @@
+{
+  "title": "7天，一场风暴！理想 i8「刮骨疗毒」，怒砍两个版本",
+  "content": "",
+  "source": "geekpark",
+  "url": "https://www.geekpark.net/news/352709",
+  "publish_time": "2025-08-19T12:00:43.637379",
+  "author": null,
+  "tags": "分类:geekpark",
+  "summary": null,
+  "published": false,
+  "rank": 10
+}

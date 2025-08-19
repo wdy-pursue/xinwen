@@ -1,0 +1,12 @@
+{
+  "title": "原民航总局副局长闫志祥逝世，享年92岁",
+  "content": "",
+  "source": "qq-news",
+  "url": "https://new.qq.com/rain/a/20250819A02W0200",
+  "publish_time": "2025-08-19T12:00:43.637165",
+  "author": null,
+  "tags": "分类:qq-news",
+  "summary": null,
+  "published": false,
+  "rank": 2
+}

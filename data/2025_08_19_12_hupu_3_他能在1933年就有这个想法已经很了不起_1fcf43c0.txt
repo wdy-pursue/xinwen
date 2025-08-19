@@ -1,0 +1,12 @@
+{
+  "title": "他能在1933年就有这个想法已经很了不起了",
+  "content": "",
+  "source": "hupu",
+  "url": "https://bbs.hupu.com/634455888.html",
+  "publish_time": "2025-08-19T12:00:43.637054",
+  "author": null,
+  "tags": "分类:hupu",
+  "summary": null,
+  "published": false,
+  "rank": 3
+}

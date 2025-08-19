@@ -1,0 +1,12 @@
+{
+  "title": "高速公路收费“大调整”，“车牌付”时代，高速ETC将成为过去？",
+  "content": "",
+  "source": "smzdm",
+  "url": "https://post.smzdm.com/p/an5w83x2/",
+  "publish_time": "2025-08-19T12:00:43.637387",
+  "author": null,
+  "tags": "分类:smzdm",
+  "summary": null,
+  "published": false,
+  "rank": 2
+}

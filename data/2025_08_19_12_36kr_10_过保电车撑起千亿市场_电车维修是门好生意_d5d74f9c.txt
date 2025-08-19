@@ -1,0 +1,12 @@
+{
+  "title": "过保电车撑起千亿市场，电车维修是门好生意？",
+  "content": "",
+  "source": "36kr",
+  "url": "https://www.36kr.com/p/3428192370019977",
+  "publish_time": "2025-08-19T12:00:43.637010",
+  "author": null,
+  "tags": "分类:36kr",
+  "summary": null,
+  "published": false,
+  "rank": 10
+}

@@ -1,0 +1,12 @@
+{
+  "title": "上海一主理人新店开业当天即闭店",
+  "content": "",
+  "source": "weibo",
+  "url": "https://s.weibo.com/weibo?q=%23%E4%B8%8A%E6%B5%B7%E4%B8%80%E4%B8%BB%E7%90%86%E4%BA%BA%E6%96%B0%E5%BA%97%E5%BC%80%E4%B8%9A%E5%BD%93%E5%A4%A9%E5%8D%B3%E9%97%AD%E5%BA%97&t=31&band_rank=1&Refer=top",
+  "publish_time": "2025-08-19T12:00:43.636771",
+  "author": null,
+  "tags": "分类:weibo",
+  "summary": null,
+  "published": false,
+  "rank": 8
+}

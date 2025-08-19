@@ -1,0 +1,12 @@
+{
+  "title": "特斯拉官宣 Model Y L 车型，9 月上市；快手辛巴宣布退网；阿里「扫地僧」多隆被曝加入老同事 AI 创企｜极客早知道 ",
+  "content": "",
+  "source": "geekpark",
+  "url": "https://www.geekpark.net/news/352827",
+  "publish_time": "2025-08-19T12:00:43.637358",
+  "author": null,
+  "tags": "分类:geekpark",
+  "summary": null,
+  "published": false,
+  "rank": 2
+}

@@ -1,0 +1,12 @@
+{
+  "title": "8点1氪｜胖东来招保洁要求25岁以下和本科学历；A股市值突破100万亿元大关；理想CEO李想请卡车司机吃饭",
+  "content": "",
+  "source": "36kr",
+  "url": "https://www.36kr.com/p/3429012034604673",
+  "publish_time": "2025-08-19T12:00:43.636989",
+  "author": null,
+  "tags": "分类:36kr",
+  "summary": null,
+  "published": false,
+  "rank": 3
+}

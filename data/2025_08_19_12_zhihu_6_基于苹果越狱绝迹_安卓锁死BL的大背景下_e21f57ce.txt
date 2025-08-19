@@ -1,0 +1,12 @@
+{
+  "title": "基于苹果越狱绝迹，安卓锁死BL的大背景下，下个时代的手机会是什么样？",
+  "content": "",
+  "source": "zhihu",
+  "url": "https://www.zhihu.com/question/1940521248112222652",
+  "publish_time": "2025-08-19T12:00:43.636843",
+  "author": null,
+  "tags": "分类:zhihu",
+  "summary": null,
+  "published": false,
+  "rank": 6
+}

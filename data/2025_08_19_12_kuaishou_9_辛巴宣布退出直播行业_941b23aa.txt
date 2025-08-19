@@ -1,0 +1,12 @@
+{
+  "title": "辛巴宣布退出直播行业",
+  "content": "",
+  "source": "kuaishou",
+  "url": "https://www.kuaishou.com/short-video/3xu674knpmzd5dw",
+  "publish_time": "2025-08-19T12:00:43.636924",
+  "author": null,
+  "tags": "分类:kuaishou",
+  "summary": null,
+  "published": false,
+  "rank": 9
+}

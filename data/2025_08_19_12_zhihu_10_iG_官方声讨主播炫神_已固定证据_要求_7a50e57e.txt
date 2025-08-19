@@ -1,0 +1,12 @@
+{
+  "title": "iG 官方声讨主播炫神「已固定证据，要求平台封禁其直播间」对此你有什么想说的？",
+  "content": "",
+  "source": "zhihu",
+  "url": "https://www.zhihu.com/question/1940850070858724398",
+  "publish_time": "2025-08-19T12:00:43.636855",
+  "author": null,
+  "tags": "分类:zhihu",
+  "summary": null,
+  "published": false,
+  "rank": 10
+}

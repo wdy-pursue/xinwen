@@ -61,7 +61,7 @@ class PlatformCards {
         // 转换为平台数组并排序
         this.platforms = Object.keys(platformGroups).map(platformName => {
             const platformNews = platformGroups[platformName]
-                .sort((a, b) => (b.hot_index || 0) - (a.hot_index || 0))
+                .sort((a, b) => (a.rank || 999) - (b.rank || 999))
                 .slice(0, 10); // 只取前10条
 
             return {
@@ -71,7 +71,7 @@ class PlatformCards {
                 news: platformNews,
                 totalCount: platformGroups[platformName].length
             };
-        }).sort((a, b) => b.totalCount - a.totalCount); // 按新闻数量排序
+        }).sort((a, b) => this.getPlatformPriority(a.originalName, b.originalName)); // 按自定义优先级排序
 
         console.log('处理后的平台数据:', this.platforms);
     }
@@ -100,6 +100,52 @@ class PlatformCards {
             'zhihu': '知乎'
         };
         return nameMap[platformName] || platformName;
+    }
+
+    /**
+     * 获取平台优先级排序
+     * @param {string} platformA - 平台A
+     * @param {string} platformB - 平台B
+     * @returns {number} 排序值
+     */
+    getPlatformPriority(platformA, platformB) {
+        // 定义平台优先级（数字越小优先级越高）
+        const priorityMap = {
+            // 百度优先级最高
+            'baidu': 1,
+            
+            // 国家政策类平台（优先级较高）
+            'qq-news': 10,
+            'toutiao': 11,
+            'thepaper': 12,
+            'netease-news': 13,
+            
+            // 科技资讯类
+            '36kr': 20,
+            'ithome': 21,
+            'geekpark': 22,
+            'sspai': 23,
+            
+            // 综合资讯类
+            'weibo': 30,
+            'zhihu': 31,
+            'tieba': 32,
+            'smzdm': 33,
+            'weread': 34,
+            'hupu': 35,
+            'douban-group': 36,
+            
+            // 娱乐类平台（优先级较低）
+            'xiaohongshu': 90,
+            'kuaishou': 91,
+            'douyin': 92,
+            'bilibili': 93
+        };
+        
+        const priorityA = priorityMap[platformA] || 50; // 默认优先级
+        const priorityB = priorityMap[platformB] || 50;
+        
+        return priorityA - priorityB;
     }
 
     getPlatformIcon(platformName) {

@@ -1,0 +1,12 @@
+{
+  "title": "OpenAI估值达5000亿美元；「原道」联手小岛秀夫，推《死亡搁浅》耳机；苹果手表将「大幅重新设计」",
+  "content": "",
+  "source": "geekpark",
+  "url": "https://www.geekpark.net/news/352696",
+  "publish_time": "2025-08-19T12:00:43.637369",
+  "author": null,
+  "tags": "分类:geekpark",
+  "summary": null,
+  "published": false,
+  "rank": 6
+}

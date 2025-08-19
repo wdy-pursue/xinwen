@@ -1,0 +1,12 @@
+{
+  "title": "沪指跳空上涨创十年新高，两市成交2.76万亿元为历史第三高",
+  "content": "",
+  "source": "thepaper",
+  "url": "https://www.thepaper.cn/newsDetail_forward_31421960",
+  "publish_time": "2025-08-19T12:00:43.637286",
+  "author": null,
+  "tags": "分类:thepaper",
+  "summary": null,
+  "published": false,
+  "rank": 9
+}

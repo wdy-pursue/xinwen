@@ -1,0 +1,12 @@
+{
+  "title": "20:00 起仅限 28 小时：整个 8 月就看这波，京东淘宝超级 18 狂促，华为小米国补新低",
+  "content": "",
+  "source": "ithome",
+  "url": "https://www.ithome.com/0/876/012.htm",
+  "publish_time": "2025-08-19T12:00:43.637331",
+  "author": null,
+  "tags": "分类:ithome",
+  "summary": null,
+  "published": false,
+  "rank": 4
+}

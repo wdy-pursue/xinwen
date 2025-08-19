@@ -1,0 +1,12 @@
+{
+  "title": "新加坡 AI 办公系统 Agnes：200 个 Agent 并行研究，让 AI 主动「找茬」打磨设计",
+  "content": "",
+  "source": "geekpark",
+  "url": "https://www.geekpark.net/news/352822",
+  "publish_time": "2025-08-19T12:00:43.637364",
+  "author": null,
+  "tags": "分类:geekpark",
+  "summary": null,
+  "published": false,
+  "rank": 4
+}

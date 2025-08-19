@@ -1,0 +1,12 @@
+{
+  "title": "净网：警方查处涉中医违规广告",
+  "content": "",
+  "source": "kuaishou",
+  "url": "https://www.kuaishou.com/short-video/3xnk6c44ynsd7f9",
+  "publish_time": "2025-08-19T12:00:43.636918",
+  "author": null,
+  "tags": "分类:kuaishou",
+  "summary": null,
+  "published": false,
+  "rank": 7
+}

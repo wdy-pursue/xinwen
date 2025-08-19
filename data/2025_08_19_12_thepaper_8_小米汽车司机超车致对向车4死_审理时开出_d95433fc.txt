@@ -1,0 +1,12 @@
+{
+  "title": "小米汽车司机超车致对向车4死，审理时开出贫困户证明？官方通报",
+  "content": "",
+  "source": "thepaper",
+  "url": "https://www.thepaper.cn/newsDetail_forward_31426385",
+  "publish_time": "2025-08-19T12:00:43.637283",
+  "author": null,
+  "tags": "分类:thepaper",
+  "summary": null,
+  "published": false,
+  "rank": 8
+}

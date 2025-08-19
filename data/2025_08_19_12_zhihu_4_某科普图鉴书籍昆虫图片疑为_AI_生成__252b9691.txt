@@ -1,0 +1,12 @@
+{
+  "title": "某科普图鉴书籍昆虫图片疑为 AI 生成，出版社回应称系「建模还原图」，如何看待此类科普图片失真问题？",
+  "content": "",
+  "source": "zhihu",
+  "url": "https://www.zhihu.com/question/1940862277059311169",
+  "publish_time": "2025-08-19T12:00:43.636838",
+  "author": null,
+  "tags": "分类:zhihu",
+  "summary": null,
+  "published": false,
+  "rank": 4
+}

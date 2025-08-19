@@ -197,11 +197,72 @@ class MobileOptimizer {
     }
 
     /**
-     * 触摸手势支持
+     * 触摸手势支持 - 特别优化iOS Safari
      */
     initTouchGestures() {
+        // iOS Safari特殊处理
+        this.isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+        this.isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        
+        if (this.isIOS) {
+            this.initIOSOptimizations();
+        }
+        
+        // 通用触摸手势
         if (!this.isMobile) return;
         
+        this.initSwipeGestures();
+        this.initPullToRefresh();
+        this.initTouchFeedback();
+    }
+    
+    /**
+     * iOS特殊优化
+     */
+    initIOSOptimizations() {
+        // 禁用iOS Safari的双击缩放
+        document.addEventListener('touchstart', (e) => {
+            if (e.touches.length > 1) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+        
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', (e) => {
+            const now = (new Date()).getTime();
+            if (now - lastTouchEnd <= 300) {
+                e.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, { passive: false });
+        
+        // 修复iOS Safari的100vh问题
+        const setVH = () => {
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        };
+        
+        setVH();
+        window.addEventListener('resize', setVH);
+        window.addEventListener('orientationchange', () => {
+            setTimeout(setVH, 100);
+        });
+        
+        // iOS Safari滚动优化
+        document.body.style.webkitOverflowScrolling = 'touch';
+        
+        // 防止iOS Safari的橡皮筋效果影响体验
+        document.body.addEventListener('touchmove', (e) => {
+            if (e.target === document.body) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+    }
+    
+    /**
+     * 滑动手势
+     */
+    initSwipeGestures() {
         let startX, startY, startTime;
         let isSwipeGesture = false;
         
@@ -211,6 +272,9 @@ class MobileOptimizer {
             startY = touch.clientY;
             startTime = Date.now();
             isSwipeGesture = false;
+            
+            // 添加触摸反馈
+            this.addTouchFeedback(e.target);
         }, { passive: true });
         
         document.addEventListener('touchmove', (e) => {
@@ -229,6 +293,7 @@ class MobileOptimizer {
         document.addEventListener('touchend', (e) => {
             if (!startX || !startY || !isSwipeGesture) {
                 startX = startY = null;
+                this.removeTouchFeedback();
                 return;
             }
             
@@ -268,12 +333,156 @@ class MobileOptimizer {
             // 重置
             startX = startY = null;
             isSwipeGesture = false;
+            this.removeTouchFeedback();
         }, { passive: true });
         
         // 阻止双指缩放以外的手势
         document.addEventListener('gesturestart', (e) => {
             e.preventDefault();
         });
+    }
+    
+    /**
+     * 下拉刷新
+     */
+    initPullToRefresh() {
+        let startY = 0;
+        let pullDistance = 0;
+        let isPulling = false;
+        const threshold = 80;
+        
+        const mainContent = document.querySelector('.main-content');
+        if (!mainContent) return;
+        
+        mainContent.addEventListener('touchstart', (e) => {
+            if (window.scrollY === 0) {
+                startY = e.touches[0].clientY;
+                isPulling = true;
+            }
+        }, { passive: true });
+        
+        mainContent.addEventListener('touchmove', (e) => {
+            if (!isPulling || window.scrollY > 0) return;
+            
+            const currentY = e.touches[0].clientY;
+            pullDistance = Math.max(0, currentY - startY);
+            
+            if (pullDistance > 0) {
+                e.preventDefault();
+                const opacity = Math.min(pullDistance / threshold, 1);
+                this.showPullToRefreshIndicator(opacity);
+            }
+        }, { passive: false });
+        
+        mainContent.addEventListener('touchend', () => {
+            if (isPulling && pullDistance > threshold) {
+                this.triggerRefresh();
+            }
+            
+            isPulling = false;
+            pullDistance = 0;
+            this.hidePullToRefreshIndicator();
+        }, { passive: true });
+    }
+    
+    /**
+     * 触摸反馈
+     */
+    initTouchFeedback() {
+        // 为所有可点击元素添加触摸反馈
+        const clickableElements = document.querySelectorAll('button, .nav-link, .news-item, .vendor-item');
+        
+        clickableElements.forEach(element => {
+            element.addEventListener('touchstart', (e) => {
+                this.addTouchFeedback(element);
+            }, { passive: true });
+            
+            element.addEventListener('touchend', () => {
+                setTimeout(() => this.removeTouchFeedback(element), 150);
+            }, { passive: true });
+            
+            element.addEventListener('touchcancel', () => {
+                this.removeTouchFeedback(element);
+            }, { passive: true });
+        });
+    }
+    
+    /**
+     * 添加触摸反馈效果
+     */
+    addTouchFeedback(element) {
+        if (!element) return;
+        
+        element.classList.add('touch-active');
+        
+        // 触觉反馈（如果支持）
+        if (navigator.vibrate) {
+            navigator.vibrate(10);
+        }
+    }
+    
+    /**
+     * 移除触摸反馈效果
+     */
+    removeTouchFeedback(element) {
+        if (element) {
+            element.classList.remove('touch-active');
+        } else {
+            // 移除所有触摸反馈
+            document.querySelectorAll('.touch-active').forEach(el => {
+                el.classList.remove('touch-active');
+            });
+        }
+    }
+    
+    /**
+     * 显示下拉刷新指示器
+     */
+    showPullToRefreshIndicator(opacity) {
+        let indicator = document.querySelector('.pull-refresh-indicator');
+        
+        if (!indicator) {
+            indicator = document.createElement('div');
+            indicator.className = 'pull-refresh-indicator';
+            indicator.innerHTML = '<i class="fas fa-sync-alt"></i> 下拉刷新';
+            document.body.appendChild(indicator);
+        }
+        
+        indicator.style.opacity = opacity;
+        indicator.style.transform = `translateY(${opacity * 50}px)`;
+    }
+    
+    /**
+     * 隐藏下拉刷新指示器
+     */
+    hidePullToRefreshIndicator() {
+        const indicator = document.querySelector('.pull-refresh-indicator');
+        if (indicator) {
+            indicator.style.opacity = '0';
+            indicator.style.transform = 'translateY(-50px)';
+        }
+    }
+    
+    /**
+     * 触发刷新
+     */
+    triggerRefresh() {
+        console.log('🔄 触发下拉刷新');
+        
+        // 显示刷新动画
+        const indicator = document.querySelector('.pull-refresh-indicator');
+        if (indicator) {
+            indicator.innerHTML = '<i class="fas fa-sync-alt fa-spin"></i> 刷新中...';
+        }
+        
+        // 模拟刷新延迟
+        setTimeout(() => {
+            if (window.newsManager && typeof window.newsManager.loadNews === 'function') {
+                window.newsManager.loadNews();
+            } else {
+                window.location.reload();
+            }
+        }, 1000);
     }
 
     /**

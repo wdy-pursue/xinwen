@@ -1,0 +1,12 @@
+{
+  "title": "AI来了，记者、UP主、写手，谁能逃过这场“灭绝浪潮”？",
+  "content": "",
+  "source": "36kr",
+  "url": "https://www.36kr.com/p/3428181824687497",
+  "publish_time": "2025-08-19T12:00:43.636995",
+  "author": null,
+  "tags": "分类:36kr",
+  "summary": null,
+  "published": false,
+  "rank": 5
+}
